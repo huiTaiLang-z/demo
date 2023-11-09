@@ -10,6 +10,11 @@ let router = new Router({
       component: resolve => require(['@/components/pc/HelloWorld'], resolve),
       meta: { title: '首页' }
     },
+    {
+      path: '/detail',
+      component: resolve => require(['@/components/pc/detail'], resolve),
+      meta: { title: '新增编辑' }
+    },
   ]
 })
 /**
